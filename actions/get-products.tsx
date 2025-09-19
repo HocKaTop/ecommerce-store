@@ -20,7 +20,7 @@ export const getProducts = async (query: Query, storeId: string): Promise<Produc
       isFeatured: query.isFeatured,
     }
   })
-  const res = await fetch(URL)
+  const res = await fetch(url)
   const data = await res.json()
   return data
 }
